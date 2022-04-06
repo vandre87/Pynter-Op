@@ -129,24 +129,14 @@ footer {
     background-color: lineal-gradient(90deg,rgb(99, 99, 109) 0%, rgba(174,174,222,1) 77%);
 }
 
-
-.cajitaServicios{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 80px;
-    height: 50vh;
-    width: 300px;
-    background-color:transparent ;
-    border: 3px solid transparent;
-    text-align: center;
-    padding: 20px;
-    border-radius: 3px;
-    margin: 10px 0px 10px 10px;
-    
+.cardServ{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 25vh;
+    padding: 15px;
+    column-gap: 15px
 }
-
-
-
 
 .cajitaGaleria{
     height: 300px;
