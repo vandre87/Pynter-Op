@@ -8,7 +8,7 @@
 }
 
 body{ font-family:  'Roboto', sans-serif;;
-    font-size: 12px;
+    font-size: 16px;
     background-color:rgb(247, 240, 240);  
  
     }
@@ -17,51 +17,14 @@ body{ font-family:  'Roboto', sans-serif;;
     font-size: 70px;
     font-weight: bold;
     background-color: rgba(128, 128, 128, 0.473);
+    color: rgb(37, 37, 117);
 
 }
-
-header{
-    width: 100%;
-    height: 50px;
-}
-
-
-
-
-h1{
-    color: darkslategrey;
-    margin: 10px 0px 0px 550px;
-
-}
-
-h2{
-    font-size: 20px;
-    padding: 25px;
-    color: black;
-}
-
-.grey{
-    background-color: rgba(169, 169, 169, 0.808);
+.light-grey{
+    color: rgba(128, 126, 126, 0.425);
 }
 
 
-
-ul{ list-style: none;
-    display: flex;
-    justify-content:space-evenly;
-    width: 100vh;
-    height: 30%;
-}
-
-li{
-    display: inline-flex;
-    padding: 5px;
-    font-size: 15px;
-}
-
-p{
-    color:rgb(69, 107, 202);
-    font-weight: 400; }
 
 footer { 
     background-color: rgba(128,128,128, 0.473);
@@ -76,7 +39,10 @@ footer {
     }
 
 .beige
-      {color: beige; }
+      {
+    color: beige; 
+    font-size: 12px;
+}
 
 
 .social_bar{
@@ -159,12 +125,12 @@ footer {
 
 
 .cajitaContacto{
-    height: 400px;
+    height: 38rem;
     width: 400px;
     border:3px solid transparent;
-    padding:30px;
-    display: inline-block;
-    overflow: hidden;
+    padding:5rem;
+    display:inline-flex;
+    
 }
 
 
@@ -174,33 +140,11 @@ footer {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-gap: 15px;
-    margin:10rem;
+    padding-top: 9rem;
     margin-left: 2rem;
     place-items: center;
     justify-items: stretch;
     
 
-    
-}
-
-@media screen and (max-width:420px) {
-    .container{
-        grid-template-columns: 100%;
-        grid-template-rows: 100%;
-         }
-    .banner{
-        background-size: 50h;
-    }
-    
-    .cajita{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction:row;
-        align-content: center;
-       
-        height: 100vh;
-         width: 50vh;
-        
-    }
     
 }
