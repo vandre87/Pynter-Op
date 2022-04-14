@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cookie&display=swap");
+header {
+  width: 100%;
+  height: 50px;
+  background-color: rgba(128, 128, 128, 0.473);
+}
+
+header .logo {
+  font-family: "Cookie" , sans-serif;
+  font-size: 100px;
+  font-weight: bold;
+  background-color: rgba(128, 128, 128, 0.473);
+}
+
+header .logo p {
+  color: #456bca;
+  font-weight: 400;
+}
+
+header .nav-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  height: 50px;
+  background-color: rgba(128, 128, 128, 0.473);
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+header .nav-bar ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100vh;
+  height: 30%;
+}
+
+header .nav-bar ul li {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 5px;
+  font-size: 15px;
+}
+
+@media screen and (max-width: 420px) {
+  .container {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: 100%;
+        grid-template-rows: 100%;
+  }
+  .banner {
+    background-size: 50h;
+  }
+  .cajita {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    height: 100vh;
+    width: 50vh;
+  }
+}
+
+h1 {
+  color: darkslategrey;
+  margin: 10px 0px 0px 550px;
+}
+
+h1 h2 {
+  padding: 10px;
+}
+
+.cajitaGaleria {
+  height: 300px;
+  width: 300px;
+  background-color: transparent;
+  border: 3px solid transparent;
+  text-align: center;
+  border-radius: 20px;
+  padding: 20px;
+  display: inline-lock;
+  overflow: hidden;
+  background-color: rgba(51, 149, 230, 0.178);
+  justify-items: center;
+}
+
+margin:auto
+.cajitaGaleria_titulo {
+  font-weight: bold;
+}
+
+h1 {
+  color: darkslategrey;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  background-color: #f7f0f0;
+}
+
+a {
+  color: deeppink;
+  text-decoration: none;
+}
+
+footer {
+  background-color: rgba(128, 128, 128, 0.473);
+  width: 100%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.beige {
+  color: beige;
+}
+
+.social_bar {
+  height: 20px;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.social_bar img {
+  width: 20px;
+  height: 20px;
+}
+
+.cajita {
+  height: 250px;
+  width: 700px;
+  background-color: #7a466d69;
+  border: 3px solid grey;
+  text-align: center;
+  overflow: hidden;
+  padding: 20px;
+  border-radius: 3px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 10px 30px 100px 100px;
+}
+
+.cajita img {
+  width: 30%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.index {
+  margin: 30px 0px 80px 60px;
+}
+
+.banner {
+  background-image: url(images/living-manta.jpg);
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.imagenDeFondo {
+  background-color: rgba(100, 148, 237, 0.322);
+}
+
+.cajitaServicios {
+  height: 300px;
+  width: 300px;
+  background-color: transparent;
+  border: 3px solid transparent;
+  text-align: center;
+  padding: 20px;
+  border-radius: 3px;
+}
+
+.cajitaContacto {
+  height: 400px;
+  width: 400px;
+  border: 3px solid transparent;
+  padding: 30px;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  grid-gap: 50px;
+  margin: 2rem;
+  place-items: center;
+  justify-items: stretch;
+}
+/*# sourceMappingURL=main.css.map */

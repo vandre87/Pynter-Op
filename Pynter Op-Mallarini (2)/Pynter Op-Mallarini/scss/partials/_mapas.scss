@@ -1,0 +1,15 @@
+
+
+$encabezados: (
+    tamaño-fuente: 20px,
+    bg-color: grey,
+
+);
+
+
+
+
+main{
+    background-color: mao-get ($encabezados,bg-color);
+
+}

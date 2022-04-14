@@ -1,0 +1,20 @@
+@mixin tamaños{
+    height: 300px;
+    width: 300px;
+
+}
+
+@mixin divs ($display,$contenido,$items)
+    {
+    display: $display;
+    justify-content: $contenido;
+    align-items: $items;
+}
+
+.cajitaContacto{
+    @include tamaños;
+}
+
+.footer{
+    @include divs(flex,center ,center )
+}

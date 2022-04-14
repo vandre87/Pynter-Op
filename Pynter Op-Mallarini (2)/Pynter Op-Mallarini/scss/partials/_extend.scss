@@ -1,0 +1,11 @@
+%hide{
+    display: inline-block;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.cajita{
+    @extend %flex;
+
+}
+
