@@ -9,20 +9,28 @@
 
 body{ font-family:  'Roboto', sans-serif;;
     font-size: 12px;
-    background-color:rgb(247, 240, 240);  
+
  
     }
+.back{
+        width: 100%;
+        height: 100%;
+        background:linear-gradient(90deg, rgba(224,232,202,1) 0%, rgba(153,228,154,0.969625350140056) 100%);
+      }
+
+
 .logo{
     font-family: "Cookie" , sans-serif;
-    font-size: 100px;
+    font-size: 40px;
+    height: 60px;
     font-weight: bold;
-    background-color: rgba(128, 128, 128, 0.473);
+    
 
 }
 
 header{
     width: 100%;
-    height: 50px;
+    height: 4rem;
     background-color: rgba(128, 128, 128, 0.473);
 }
     
@@ -36,7 +44,8 @@ text-decoration: none ;
 
 h1{
     color: darkslategrey;
-    margin: 10px 0px 0px 550px;
+    text-align: center;
+    margin: 10px 0px 0px 20px;
 
 }
 
@@ -72,12 +81,23 @@ p{
     color:rgb(69, 107, 202);
     font-weight: 400; }
 
+.serv{
+    width: 100%;
+    display: inline-flex;
+    padding-top: 60px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    gap: 20px;
+
+
+}
+
 footer { 
     background-color: rgba(128,128,128, 0.473);
     width: 100%;
     height: 50px;
     display: flex;
-    position: absolute;
+    position: fixed;
     bottom:0;
     flex-direction: row;
     align-items: center;
@@ -101,24 +121,35 @@ footer {
 }
 .cajita{
     
-    height: 250px;
-    width: 700px;
-    background-color:#7a466d69 ;
+    height: 20rem;
+    width: 50%;
+    background-color:#c096b652 ;
     border: 3px solid grey;
-    text-align: center;
     overflow: hidden;
     padding: 20px;
     border-radius: 3px;
     display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     margin: 10px 30px 100px 100px;
+    box-shadow: 1px 1px 5px 1px grey;
 
     }
-    
-.cajita img{
-    width: 30%;
-    flex-direction: column;
+.imgserv{
+        width: 30%;
+        height: 30%;
+        border-radius: 10%;
+        border-style: unset;
+        box-shadow: 1px 1px 5px 1px grey;
+        }
+
+.nos{
+    display:flex;
+    margin-top: 8%;
     
 }
+    
 
 .index{
     margin: 30px 0px 80px 60px;
@@ -127,15 +158,16 @@ footer {
 
 
 .banner{
-    background-image: url(images/living-manta.jpg);
+    background-image: url(../images/living-manta.jpg);
     background-size: cover;
     min-height: 100vh;
 
 }    
 
-.imagenDeFondo{
-    background-color: rgba(100, 148, 237, 0.322);
-    ;
+.backg{
+    background-color:linear-gradient(90deg, rgba(53,44,201,1) 0%, rgba(2,2,8,0.8211659663865546) 23%);
+    background-size: cover;
+    min-height: 100vh;
 }
 
 .cajitaServicios{
@@ -150,25 +182,6 @@ footer {
 }
 
 
-.cajitaGaleria{
-    height: 300px;
-    width: 300px;
-    background-color:transparent ;
-    border: 3px solid transparent;
-    text-align: center;
-    border-radius: 20px;
-    padding: 20px;
-    display: inline-lock;
-    overflow: hidden;
-    background-color: rgba(51, 149, 230, 0.178);
-    justify-items: center;
-    margin:auto
-    
-
-    
-}
-
-
 
 .cajitaContacto{
     height: 400px;
@@ -179,26 +192,45 @@ footer {
     overflow: hidden;
 }
 
-.whatsapp{
-    width: 5%;
-    height: 8%;
-    position: fixed;
-    bottom: 50px;
-    right: 50px;
-}
 
 .container{
     display:grid;
     justify-content:stretch;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 50px;
+    grid-template-rows: 300px;
+    grid-gap: 10px;
     margin:2rem;
     place-items: center;
     justify-items: stretch;
     
 
     
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.galeria-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: minmax(200px, auto);
+    grid-auto-flow: dense;
+    gap: 10px;
+    padding: 60px;
+}
+
+.grid-item:hover{
+    filter: opacity(1.9);
+    transform: scale(0.9);
+
+}
+
+.card:hover{
+    box-shadow: 1px 1px 5px 1px grey;
 }
 
 @media screen and (max-width:420px) {

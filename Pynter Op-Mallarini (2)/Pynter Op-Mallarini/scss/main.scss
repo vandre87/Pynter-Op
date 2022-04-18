@@ -19,10 +19,17 @@
 
 body{ font-family:  'Roboto', sans-serif;;
     font-size: 12px;
-    background-color:rgb(247, 240, 240);  
- 
+    
     }
 
+
+.back{
+        width: 100%;
+        height: 100%;
+        background:linear-gradient(90deg, rgba(53,44,201,1) 0%, rgba(2,2,8,0.8211659663865546) 23%)
+      }     
+
+   
 
 
     
@@ -96,7 +103,7 @@ footer {
 
 
 .banner{
-    background-image: url(images/living-manta.jpg);
+    background-image: url(../images/living-manta.jpg);
     background-size: cover;
     min-height: 100vh;
 
