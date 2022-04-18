@@ -15,23 +15,26 @@ body{ font-family:  'Roboto', sans-serif;;
 .back{
         width: 100%;
         height: 100%;
-        background:linear-gradient(90deg, rgba(224,232,202,1) 0%, rgba(153,228,154,0.969625350140056) 100%);
+        background:linear-gradient(90deg, rgba(237, 238, 233, 0.445) 0%, rgba(175, 206, 221, 0.74) 100%);
       }
 
 
 .logo{
     font-family: "Cookie" , sans-serif;
-    font-size: 40px;
+    font-size: 50px;
     height: 60px;
     font-weight: bold;
+    color: rgba(26, 26, 87, 0.699);
     
 
 }
 
+
+
+
 header{
     width: 100%;
     height: 4rem;
-    background-color: rgba(128, 128, 128, 0.473);
 }
     
 
@@ -43,7 +46,7 @@ text-decoration: none ;
 
 
 h1{
-    color: darkslategrey;
+    color: rgb(53, 100, 100);
     text-align: center;
     margin: 10px 0px 0px 20px;
 
@@ -53,7 +56,9 @@ h2{
     padding: 10px;
 }
 
-
+.grey{
+    background-color:rgba(128,128,128, 0.473) ;
+  }
 
 .nav-bar{
     display: flex;
@@ -78,8 +83,9 @@ li{
 }
 
 p{
-    color:rgb(69, 107, 202);
-    font-weight: 400; }
+    color:rgb(53, 60, 78);
+    font-weight: 16px; }
+
 
 .serv{
     width: 100%;
@@ -181,15 +187,28 @@ footer {
     
 }
 
-
+.cyu{
+    display: flex;
+    width: 100%;
+    height: 30%;
+    gap: 100px;
+    padding-left: 100px;
+}
 
 .cajitaContacto{
     height: 400px;
     width: 400px;
-    border:3px solid transparent;
+    border:3px;
     padding:30px;
-    display: inline-block;
-    overflow: hidden;
+    display: -ms-inline-grid;
+    
+    border: #c096b652;
+
+}
+
+.contact{
+    padding: 5%;
+    border: groove;
 }
 
 
@@ -223,6 +242,11 @@ img{
     padding: 60px;
 }
 
+.grid-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .grid-item:hover{
     filter: opacity(1.9);
     transform: scale(0.9);
@@ -233,7 +257,9 @@ img{
     box-shadow: 1px 1px 5px 1px grey;
 }
 
-@media screen and (max-width:420px) {
+
+
+@media screen and (max-width:600px) {
     .container{
         grid-template-columns: 100%;
         grid-template-rows: 100%;
@@ -251,6 +277,38 @@ img{
         height: 100vh;
          width: 50vh;
         
+    }
+    .grid-item{
+        grid-column: span 3;
+        grid-template-rows: repeat(5, 100px);
+        
+      }
+
+    .cajitaContacto{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .nos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
+    }
+
+    .imgserv{
+        width: 50%;
+        
+        
+    }
+
+    .cajita{
+        display: flex;
+        height: 15rem;
+        margin-bottom: 30px;
+        margin-left: 30px ;
     }
     
 }
