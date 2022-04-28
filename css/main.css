@@ -134,9 +134,6 @@ h1 h2 {
   font-weight: bold;
 }
 
-h1 {
-  color: darkslategrey;
-}
 
 * {
   margin: 0;
@@ -215,6 +212,7 @@ footer {
   display: -ms-inline-flexbox;
   display: inline-flex;
   margin: 10px 30px 100px 100px;
+  
 }
 
 .cajita img {

@@ -43,6 +43,31 @@ color: deeppink;
 text-decoration: none ;
 }
 
+#portada p{
+    color: rgb(207, 207, 212);
+    font-family: "Cookie", sans-serif;
+    font-weight: lighter;
+    font-size: 5.9rem;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    background-color: #474752d4;
+    padding: 8rem;
+
+    width: 100%;
+
+
+}
+
+#portada{
+    height: 70%;
+    width: 100%;
+    padding-top: 5rem;
+}
+
+#portada p span{
+    color: rgba(189, 107, 171, 0.801);
+}
 
 
 h1{
@@ -140,6 +165,7 @@ footer {
     align-items: center;
     margin: 10px 30px 100px 100px;
     box-shadow: 1px 1px 5px 1px grey;
+    
 
     }
 .imgserv{
@@ -300,6 +326,7 @@ img{
 
     .imgserv{
         width: 50%;
+
         
         
     }
@@ -311,5 +338,22 @@ img{
         margin-left: 30px ;
     }
     
+    #portada{
+        height: 80%;
+        width: 100%;
+
+    }
+
+    #portada p{
+        font-size: 2rem;
+        padding: 2rem;
+    }
+
+    .serv{
+        display: flex;
+        padding: 10%;
+        gap: 10%;
+        flex-wrap: wrap;
+    }
 }
 
